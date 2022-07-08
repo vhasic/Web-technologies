@@ -1,0 +1,43 @@
+.forma {
+    display: flex;
+}
+
+form {
+    margin: auto;
+}
+
+label {
+    display: table-cell;
+    text-align: right;
+}
+
+input {
+    display: table-cell;
+}
+
+.red {
+    display: table-row;
+}
+
+.kolona2 {
+    text-align: left;
+}
+
+label, input, select {
+    margin: 2%;
+}
+
+/*Za modbilne uređaje ispod 600px*/
+@media screen and (max-width: 600px) {
+    input, select, label{
+        display: block;
+    }
+    .kolona2{
+        text-align: center;
+        margin: 0 auto 0;
+    }
+    label{
+        text-align: center;
+        margin-top: 10%;
+    }
+}

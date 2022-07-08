@@ -1,0 +1,55 @@
+body{
+    background-color: #b9cbdf;
+}
+legend {
+    text-align: center;
+}
+
+.prethodnaAktivnost, .sljedecaAktivnost {
+    margin-top: 10%;
+    width: 15%;
+    border-radius: 30px;
+    height: 200px;
+    display: inline-block;
+}
+
+.trenutnaAktivnost {
+    display: inline-block;
+    margin-top: 5%;
+    width: 20%;
+    border-radius: 8px;
+    height: 250px;
+}
+
+.prethodnaAktivnost {
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+.sljedecaAktivnost {
+    margin-left: 5%;
+}
+
+/*editovanje teksta*/
+.naslovAktivnosti {
+    text-align: center;
+    font-size: x-large;
+    padding-top: 15%;
+    padding-bottom: 7%;
+}
+
+.opisAktivnosti {
+    text-align: center;
+    font-size: small;
+}
+
+/*Za modbilne uređaje ispod 600px*/
+@media screen and (max-width: 600px) {
+    .prethodnaAktivnost {
+        display: none;
+    }
+    .trenutnaAktivnost, .sljedecaAktivnost{
+        display: block;
+        margin:auto;
+    }
+}

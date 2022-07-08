@@ -1,0 +1,20 @@
+operacija,ruta,ulaz,izlaz
+DELETE,/all,null,{\"message\":\"Uspješno obrisan sadržaj datoteka!\"}
+GET,/predmeti,null,[]
+POST,/predmet,{\"naziv\":\"RMA\"},{\"message\":\"Uspješno dodan predmet!\"}
+POST,/predmet,{\"naziv\":\"RMA\"},{\"message\":\"Naziv predmeta postoji!\"}
+POST,/aktivnost,{\"naziv\": \"RMA\", \"tip\": \"predavanja\", \"pocetak\": \"9\", \"kraj\": \"12\", \"dan\": \"ponedjeljak\"},{\"message\":\"Uspješno dodana aktivnost!\"}
+POST,/aktivnost,{\"naziv\": \"RMA\", \"tip\": \"vjezbe\", \"pocetak\": \"10\", \"kraj\": \"12\", \"dan\": \"ponedjeljak\"},{\"message\":\"Aktivnost nije validna!\"}
+GET,/aktivnosti,null,[{\"naziv\": \"RMA\", \"tip\": \"predavanja\", \"pocetak\": \"9\", \"kraj\": \"12\", \"dan\": \"ponedjeljak\"}]
+POST,/aktivnost,{\"naziv\": \"RMA\", \"tip\": \"vjezbe\", \"pocetak\": \"12\", \"kraj\": \"13.5\", \"dan\": \"ponedjeljak\"},{\"message\":\"Uspješno dodana aktivnost!\"}
+GET,/predmet/RMA/aktivnost/,null,[{\"naziv\": \"RMA\", \"tip\": \"predavanja\", \"pocetak\": \"9\", \"kraj\": \"12\", \"dan\": \"ponedjeljak\"},{\"naziv\": \"RMA\", \"tip\": \"vjezbe\", \"pocetak\": \"12\", \"kraj\": \"13.5\", \"dan\": \"ponedjeljak\"}]
+POST,/predmet,{\"naziv\":\"WT\"},{\"message\":\"Uspješno dodan predmet!\"}
+DELETE,/aktivnost/RMA,null,{\"message\":\"Uspješno obrisana aktivnost!\"}
+POST,/aktivnost,{\"naziv\": \"WT\", \"tip\": \"predavanja\", \"pocetak\": \"9\", \"kraj\": \"12\", \"dan\": \"ponedjeljak\"},{\"message\":\"Uspješno dodana aktivnost!\"}
+GET,/aktivnosti,null,[{\"naziv\": \"WT\", \"tip\": \"predavanja\", \"pocetak\": \"9\", \"kraj\": \"12\", \"dan\": \"ponedjeljak\"}]
+DELETE,/aktivnost/WT,null,{\"message\":\"Uspješno obrisana aktivnost!\"}
+GET,/predmet/WT/aktivnost/,null,[]
+DELETE,/predmet/WT,null,{\"message\":\"Uspješno obrisan predmet!\"}
+DELETE,/predmet/RMA,null,{\"message\":\"Uspješno obrisan predmet!\"}
+GET,/predmeti,null,[]
+DELETE,/all,null,{\"message\":\"Uspješno obrisan sadržaj datoteka!\"}

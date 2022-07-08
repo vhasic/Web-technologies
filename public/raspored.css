@@ -1,0 +1,77 @@
+.rapored {
+    border-collapse: collapse;
+    margin: 5%;
+    width: 90%;
+    height: 300px;
+}
+
+.dan {
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 1px solid black;
+    width: 12%;
+    padding-right: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+td.aktivnost{
+    background-color: #dee6ef;
+}
+
+td{
+    width: 1.83%;
+    background-color: #e6e6e6;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+}
+tr:not(:first-child){
+    height: 20%;
+}
+
+.par{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.nepar{
+    border-right: 1px dashed black;
+    border-bottom: 1px solid black;
+    /*border-left: 1px solid black;*/
+    border-top: 1px solid black;
+}
+
+th {
+    font-weight: normal;
+}
+
+.prviBroj{
+    padding-left: 10%;
+}
+.vrijeme{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70%;
+}
+
+/*Za modbilne uređaje ispod 600px*/
+@media screen and (max-width: 600px) {
+    td:empty, .vrijeme {
+        display: none;
+        border: 0;
+    }
+    .dan, td{
+        position:relative;
+        float:left;
+        clear:both;
+        width:100%;
+        text-align:center;
+    }
+    .dan{
+        border: 0;
+    }
+    td:nth-of-type(even), td:nth-of-type(odd){
+        border: 1px solid black;
+    }
+}

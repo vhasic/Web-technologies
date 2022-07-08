@@ -1,0 +1,5 @@
+naziv,tip,pocetak,kraj,dan
+WT,predavanje,9,12,ponedjeljak
+OOI,vjezbe,12,15,ponedjeljak
+RG,predavanja,9,12,utorak
+RG,vjezbe,15,17,ponedjeljak

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Raspored</title>
+
+    <link rel="stylesheet" href="raspored.css">
+    <link rel="stylesheet" href="meni.css">
+</head>
+<body>
+<nav id="meni">
+    <ul>
+        <li><a href="raspored.html">Raspored</a></li>
+        <li><a href="aktivnost.html">Aktivnosti</a></li>
+        <li><a href="planiranjeNastavnik.html">Planiranje za nastavnike</a></li>
+        <li><a href="podaciStudent.html">Podaci o studentu</a></li>
+        <li><a href="unosRasporeda.html">Unos aktivnosti</a></li>
+        <li><a href="studenti.html">Unos studenta</a></li>
+    </ul>
+</nav>
+
+<!-- Pošto ne mogu uskladiti bordere zbog column spana, radim preko klasa.
+ Prvu kolonu (dani) ne računam, pa je prva kolona u kojoj su aktivnosti klase nepar. Dalje ide nepar, par, ... i ovo će raditi i za colspan-->
+<!-- računanje klase: Ako je (trenutni broj koolone u kojoj treba biti aktivnost+(colspan-1)) paran broj onda je par klasa inače je napar klasa -->
+<table class="rapored">
+    <tr>
+        <th colspan="2" class="prviBroj vrijeme">08:00</th>
+        <th colspan="2" class="vrijeme"></th>
+        <th colspan="2" class="vrijeme">10:00</th>
+        <th colspan="2" class="vrijeme"></th>
+        <th colspan="2" class="vrijeme">12:00</th>
+        <th colspan="2" class="vrijeme"></th>
+        <th colspan="2" class="vrijeme"></th>
+        <th colspan="2" class="vrijeme">15:00</th>
+        <th colspan="2" class="vrijeme"></th>
+        <th colspan="2" class="vrijeme">17:00</th>
+        <th colspan="2" class="vrijeme"></th>
+        <th colspan="2" class="vrijeme">19:00</th>
+        <th colspan="2" class="vrijeme"></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th scope="row" class="dan">Ponedjeljak</th>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td colspan="6" class="aktivnost par">WT <br> predavanje</td>
+        <td colspan="3" class="aktivnost nepar">WT <br> vježbe</td>
+        <td class="par"></td>
+        <td colspan="6" class="aktivnost par">RMA <br> predavanja</td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+    </tr>
+    <tr>
+        <th scope="row" class="dan">Utorak</th>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td colspan="3" class="aktivnost par">RMA <br> vježbe</td>
+        <td colspan="4" class="aktivnost par">DM <br> tutorijal</td>
+        <td colspan="6" class="aktivnost par">DM <br> predavanje</td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+    </tr>
+    <tr>
+        <th scope="row" class="dan">Srijeda</th>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td colspan="6" class="aktivnost par">OI <br> predavanje</td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+    </tr>
+    <tr>
+        <th scope="row" class="dan">Četvrtak</th>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+    </tr>
+    <tr>
+        <th scope="row" class="dan">Petak</th>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+        <td class="nepar"></td>
+        <td class="par"></td>
+    </tr>
+</table>
+</body>
+</html>

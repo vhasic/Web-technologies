@@ -1,0 +1,11 @@
+#meni {
+    background-color: #96e9a1;
+    margin: 0;
+    padding: 1px;
+}
+
+#meni ul li{
+    display: inline;
+    padding-left: 1%;
+}
+
